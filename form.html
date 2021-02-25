@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="blog_create.php" method="POST">
+        <p>タイトル</p>
+        <input type="text" name="title">
+        <p>本文</p>
+        <textarea name="content" id="" cols="30" rows="10"></textarea>
+        <br>
+        <p>カテゴリー</p>
+        <select name="category" id="">
+            <option value="1">ブログ</option>
+            <option value="2">日常</option>
+            <option value="3">雑談</option>
+        </select>
+        <br>
+        <input type="radio" name="publish_status" value="1" checked>公開
+        <input type="radio" name="publish_status" value="2">非公開
+        <input type="submit" value="投稿">
+
+    </form>
+
+</body>
+</html>
